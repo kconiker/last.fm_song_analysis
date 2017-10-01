@@ -1,5 +1,8 @@
-#Song Dataset Analysis
-#Author: Kyle Coniker
+------------------------
+Song Dataset Analysis
+-----------------------
+
+Author: Kyle Coniker
 
 This python script analyzes of 2011-2005 song data from last.fm. (Info on dataset below analysis description)
 
