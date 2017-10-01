@@ -1,5 +1,5 @@
-Song Dataset Analysis
-Author: Kyle Coniker
+#Song Dataset Analysis
+#Author: Kyle Coniker
 
 This python script analyzes of 2011-2005 song data from last.fm. (Info on dataset below analysis description)
 
@@ -17,45 +17,45 @@ The questions answered in the analysis are the following.
 7. How similar are two artists?
 8. 10 artists with the highest overall number of tags, first month in top 10 and months in top 10
 
-# question 1
-# description: Take the first 10 artist from our sorted list "sorted_aidnumplays"
-#              to get most played artists cross all users. Then look up the names
-#              of the artists from "aid2name"
+ question 1
+ description: Take the first 10 artist from our sorted list "sorted_aidnumplays"
+               to get most played artists cross all users. Then look up the names
+              of the artists from "aid2name"
 
-# question 2
-# description: Grab the dictionary of users and the artists they have listened to
-#              loop through the users then loop through the artists
-#              if a user listened to an artist add the artist to the artist_listeners
-#              dictionary. Next put the artist ID and count into a tuple. Then sort the
-#              tuple and print out the top 10 artists
+ question 2
+ description: Grab the dictionary of users and the artists they have listened to
+              loop through the users then loop through the artists
+              if a user listened to an artist add the artist to the artist_listeners
+              dictionary. Next put the artist ID and count into a tuple. Then sort the
+              tuple and print out the top 10 artists
 
-# question 3
-# description: loop through sorted_uidnumplays and print out the top ten
+ question 3
+ description: loop through sorted_uidnumplays and print out the top ten
 
-# question 4
-# description: for each artist computed the average number of plays by taking
-#              the total number of plays for each artist and dividing it by number
-#              listeners put the values in a tuple, sort it then printing out the 10 highest artists name, id,
-#              total plays, total number of listeners, and computed average
+ question 4
+ description: for each artist computed the average number of plays by taking
+              the total number of plays for each artist and dividing it by number
+              listeners put the values in a tuple, sort it then printing out the 10 highest artists name, id,
+              total plays, total number of listeners, and computed average
 
-# question 5
-# description: loop through the artist_avg_plays dictionary in question 4, check to see if it has more than 50 listeners
-#              if so put the aid, avg, plays, and listeners in a tuple, sort the tuple and print the artist name, artist id,
-#              total number of plays, total number of listeners, and the computed average number of plays per listener
+ question 5
+ description: loop through the artist_avg_plays dictionary in question 4, check to see if it has more than 50 listeners
+              if so put the aid, avg, plays, and listeners in a tuple, sort the tuple and print the artist name, artist id,
+              total number of plays, total number of listeners, and the computed average number of plays per listener
 
-# question 6
-# description: find out who has 5 or more friends and compute the total, compute the total for who  has less than 5
-#              friends, add up each of their total song plays using uid2numplays dictionary, divide total number of song
-#              plays by total number of users print the print the two numbers with labels
+ question 6
+ description: find out who has 5 or more friends and compute the total, compute the total for who  has less than 5
+              friends, add up each of their total song plays using uid2numplays dictionary, divide total number of song
+              plays by total number of users print the print the two numbers with labels
 
-# question 7
-# description: first compute the set of users who listened to aid1 and compute another set of users that listened
-#              to aid2, do an intersection on the two sets and count how many values there are, do a union one the two
-#              sets and count the values, then compute the Jaccard index by dividing the intersection by the union total
-#              look up and print out both artist names using aid2name dictionary and then print the Jaccard index
+ question 7
+ description: first compute the set of users who listened to aid1 and compute another set of users that listened
+              to aid2, do an intersection on the two sets and count how many values there are, do a union one the two
+              sets and count the values, then compute the Jaccard index by dividing the intersection by the union total
+              look up and print out both artist names using aid2name dictionary and then print the Jaccard index
 
-# question 8
-# description: compute the number of tags for each artist, group dataframe by artist id and count the number of tad IDs
+ question 8
+ description: compute the number of tags for each artist, group dataframe by artist id and count the number of tad IDs
 
 
 Files:
